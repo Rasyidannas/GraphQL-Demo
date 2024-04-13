@@ -6,6 +6,7 @@ public class Book  {
     public DateTime? PublishedDate {get; set;} //this is custom scalar type
     public BookGenre Genre {get; set;} //this is custom enum type
     public Author? Author { get; set; } //this is a navigation property and ? means it is nullable
+    public BookReview[]? Reviews { get; set; } //this is a navigation property and [] means it is an Array/List/Collection
 }
 
 // enumeration type (often abbreviated as Enum) is a type that is restricted to a particular set of values. 
