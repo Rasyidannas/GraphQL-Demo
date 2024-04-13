@@ -9,6 +9,8 @@ public class Query
 
     public List<IReadingMaterials> ReadingMaterials => GetReadingMaterials();
 
+    public List<IThings> Things => GetThings();
+
     private List<Book> ReadBooks()  {
         string fileName = "Database/books.json";
         string jsonString = File.ReadAllText(fileName);
@@ -25,5 +27,11 @@ public class Query
         var materials = ReadBooks().Cast<IReadingMaterials>().ToList();
         materials.AddRange(ReadMagazines().Cast<IReadingMaterials>().ToList());
         return materials;
+    }
+
+    private List<IThings> GetThings()  {
+        var things = ReadBooks().Cast<IThings>().ToList();
+        things.AddRange(ReadMagazines().Cast<IThings>().ToList());
+        return things;
     }
 }
