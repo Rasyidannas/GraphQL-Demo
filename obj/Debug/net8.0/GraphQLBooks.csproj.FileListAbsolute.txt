@@ -54,3 +54,4 @@
 /home/rasyidannas/GraphQLDemo/obj/Debug/net8.0/GraphQLBooks.pdb
 /home/rasyidannas/GraphQLDemo/obj/Debug/net8.0/GraphQLBooks.genruntimeconfig.cache
 /home/rasyidannas/GraphQLDemo/obj/Debug/net8.0/ref/GraphQLBooks.dll
+/home/rasyidannas/GraphQLDemo/obj/Debug/net8.0/GraphQLBooks.sourcelink.json
